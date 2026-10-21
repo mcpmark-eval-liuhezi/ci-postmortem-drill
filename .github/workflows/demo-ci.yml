@@ -1,0 +1,13 @@
+name: demo-ci
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start drill
+        run: echo "starting drill"
+      - name: Finish drill
+        run: echo "drill complete"
